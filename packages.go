@@ -7,6 +7,9 @@ import (
 	"time"
 )
 
+// Pi2 is a constant used a lot in digital signal processing.
+const Pi2 = 6.28
+
 var (
 	complexNum  complex64 = 8 + 10i
 	unsignedNum uint8     = 1<<8 - 1
@@ -21,5 +24,6 @@ func main() {
 	fmt.Println("Nice fact: one can use := declaration only inside a function!")
 	fmt.Printf("Complex numbers in Go of type %T and value: %v!\n", complexNum, complexNum)
 	fmt.Printf("Also the basic variable types like uint: %v.\n", unsignedNum)
-	fmt.Print("Constants in Go have the const keyword and cant be declared with := signs.")
+	fmt.Print("Constants in Go have the const keyword and cant be declared with := signs.\n")
+	fmt.Printf("For example 2pi in radians is a constant: %.2f.\n", Pi2)
 }
